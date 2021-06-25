@@ -1,0 +1,515 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+    width: auto;
+    box-sizing: border-box;
+    /*align-items: center;*/
+    padding: 20px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mercadolibre {
+    display: flex;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 3%;
+}
+
+
+main{
+    background-color: #e8e8e8; 
+    width: 100vw;
+    padding: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    animation-name: ache2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav{
+    font-weight: bold;
+    display: flex;
+justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    display: flex;
+    margin: 0 10px;
+
+}
+
+@keyframes ache2 {
+    0%{
+        font-size: 24px;
+        color: black;
+    }
+
+    100%{
+        font-size: 30px;
+        color: yellow;
+        opacity: .7;
+    }
+}
+
+.comprar {
+    display: flex;
+    width: 33%;
+    text-align: left;
+    padding: 10px;
+}
+
+.main-header-bottombar ul {
+    list-style: none;
+    margin: 0;
+    padding: 11px;
+}
+
+.main-header-bottombar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    /*padding: 5px 0;*/
+    /*font-size: 17px;*/
+}
+
+.hamburguer-buttom {
+    background-color: #1259c3;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+article img {
+    width: 80%;
+}
+
+/*//////////////////////////////* MAIN ///////////////////////////////////*/
+
+.section1{
+
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+.items {
+    margin-top: 15px;
+    margin-left: 3%;
+    margin-bottom: 15px;
+    margin-right: 1%;
+    width: 60%;
+    border: solid 6px rgba(202, 203, 204, .2);
+}
+
+.items:hover{
+    border: solid 6px rgba(118, 138, 226, 0.3);
+    transition: all .8s;
+}
+
+.items:hover .detalles{
+    display: inline-block;
+    transition: all 1s;
+}
+
+.section1 .items{
+    display: inline-block;;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 25%;
+}
+
+.section2{
+
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+.section2 .items{
+    display: inline-block;;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 25%;
+}
+
+.imagen {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+      
+}
+
+.infoProducto{
+    line-height: 20px;
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+
+}
+
+.infoProducto .price { 
+
+    display: inline-block;
+    align-items: right;
+    justify-content: center;
+    width: 30%;
+
+}
+
+.infoProducto  .outlet { 
+
+    display: inline-block;
+    align-items: right;
+    justify-content: center;
+    width: 69%;
+
+}
+
+.infoProducto  .detalles { 
+
+    display: none;
+}
+
+.fa-truck{     /*CARRITO DE COMPRAS EN PRODUCTOS*/
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -80%;
+    top: -25px;
+    color: green;
+
+}
+
+.items:hover  .fa-truck{
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+   }
+
+/*//////////////////////////////* FOOTER ///////////////////////////////////*/
+
+.fa-credit-card{        /* TARJETA DE CREDITO */
+    display: block;
+    font-size: 260%;
+    color: blue;
+    padding: 3%;
+}
+
+.fa-credit-card:hover{  
+    color: rgba(214, 195, 22, 0.918);
+}
+
+.fa-gift{                /* CAJA DE REGALOS */
+    display: block;
+    font-size: 260%;
+    color: blue;
+    padding: 3%;
+}
+
+.fa-gift:hover{
+    color: rgba(214, 195, 22, 0.918);
+}
+
+
+.fa-user-secret{                /* GUARDIA DE SEGURIDAD */
+    display: block;
+    font-size: 260%;
+    color: blue;
+    padding: 3%;
+}
+
+.fa-user-secret:hover{
+    color: rgba(214, 195, 22, 0.918);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 425px){
+
+    .infoProducto {
+        display: none;
+    
+    }
+
+    nav {
+        display: none;
+    }
+    .section1 .items {
+
+        width: 80%;
+    }
+    .section2 .items{
+
+        width: 80%;
+    }
+    
+}
+/*Version TABLETA*/
+
+@media(min-width: 425px) and (max-width: 768px){
+    .hamburguer-buttom {
+        display: none;
+    }
+    
+
+    .section1 .items{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 40%;
+    }
+    .section2 .items{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 40%;
+    },
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+/*Version DESKTOP*/
+
+@media(min-width: 768px) {
+    .hamburguer-buttom {
+        display: none;
+    }
+    
+
+    .section1 .items {
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 20%;
+    }
+    .section2 .items{
+        display: inline-block;;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 20%;
+    }
+
+    footer {
+        width: 100vw;
+        padding: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0%;
+        display: flex;
+    }
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////*/
+/*///////////////   HTML   REGISTER  ////////////*/
+/*///////////////////////////////////////////////*/
+
+
+.suscription{
+    background-color: #e8e8e8;
+    padding: 6% 30% 60% 30%;
+    width: auto;
+    text-align: center;
+    height: 1024px;
+}
+
+.seccion_registro{
+    margin: auto;
+    width: 100%;
+    background-color: #b8b8b8;
+    padding: 6%;
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+.rectangulos{
+    margin-bottom: 10px;
+
+}
+
+.control_rec{
+    width: 96%;
+    padding: 2px;
+    border-radius: 6px;
+    border: none;
+}
+
+.button_register{
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px;
+    width: 84px;
+} 
+
+.button_register:hover{
+    color: white;
+    background-color: blue;
+    transition: all .3s;
+} 
+
+.suscription label{
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+    
+}
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////*/
+/*///////////////   HTML   LOGER     ////////////*/
+/*///////////////////////////////////////////////*/
+
+
+
+.ingresar_log{
+    background-color: #e8e8e8;
+    padding: 6% 30% 60% 30%;
+    width: auto;
+    text-align: center;
+    height: 1024px;
+}
+
+.seccion_login{
+    margin: auto;
+    width: 100%;
+    background-color: #b8b8b8;
+    padding: 6%;
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+.rectangulos_log{
+    margin-bottom: 10px;
+
+}
+
+.control_log{
+    width: 96%;
+    padding: 2px;
+    border-radius: 6px;
+    border: none;
+}
+
+.button_register_log{
+    border-radius: 6px;
+    border: none;
+    font-size: 10px;
+    margin-top: 34px;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: blue;
+} 
+
+.button_register_log:hover{
+    color: white;
+    background-color: #529dff;
+    transition: all .3s;
+}
+
+
+.ingresar_log label{
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+    
+}
