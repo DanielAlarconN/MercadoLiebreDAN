@@ -7,7 +7,7 @@ const publicPath = path.resolve(__dirname, './public');
 
 app.use(express.static(publicPath))
 
-app.listen(3030,() => {
+app.listen(**Si existe la variable PORT, usa ese dato** || **Si no directo 3000**, function() {
     console.log('corriendo puerto 3030');
 });
 
