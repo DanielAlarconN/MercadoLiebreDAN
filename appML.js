@@ -7,8 +7,10 @@ const publicPath = path.resolve(__dirname, './public');
 
 app.use(express.static(publicPath))
 
-app.listen(process.env.Port || 3000, function() {
-    console.log('corriendo puerto 3030');
+const puerto = process.env.Port || 3000
+
+app.listen(puerto , function() {
+    console.log(`corriendo puerto ${puerto}`);
 });
 
 app.get('/', (req, res) => {
