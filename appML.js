@@ -12,14 +12,14 @@ app.listen(3000, function() {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './views/home.html'));
+    res.sendFile(path.resolve(__dirname, '/views/home.html'));
 })
 
 app.get("/registro", function(req,res){
-    let htmlArchivo = path.resolve(__dirname, './views/registro.html')
+    let htmlArchivo = path.resolve(__dirname, '/views/registro.html')
     res.sendFile(htmlArchivo);
 })
 
 app.get("/log", function(req,res){
-    let htmlArchivo = path.resolve(__dirname, './views/log.html')
+    let htmlArchivo = path.resolve(__dirname, '/views/log.html')
     res.sendFile(htmlArchivo)})
