@@ -1,2 +1,2 @@
 web: node appML.js
-web: node /src/appML.js
+web: node /appML.js
